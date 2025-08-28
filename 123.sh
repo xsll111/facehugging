@@ -346,6 +346,4 @@ echo -e "${GREEN}可以通过日志查看详细的启动过程和隧道信息${N
 echo
 
 echo -e "${GREEN}部署完成！感谢使用！${NC}"
-为什么提示
-/dev/fd/63: line 7: syntax error near unexpected token `newline'
-/dev/fd/63: line 7: `<!DOCTYPE html>'
+

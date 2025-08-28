@@ -6,8 +6,6 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-clear
-
 echo -e "${GREEN}========================================${NC}"
 echo -e "${GREEN}    Python Xray Argo 一键部署脚本    ${NC}"
 echo -e "${GREEN}========================================${NC}"

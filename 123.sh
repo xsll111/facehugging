@@ -6,16 +6,6 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-generate_uuid() {
-    if command -v uuidgen &> /dev/null; then
-        uuidgen | tr '[:upper:]' '[:lower:]'
-    elif command -v python3 &> /dev/null; then
-        python3 -c "import uuid; print(str(uuid.uuid4()))"
-    else
-        hexdump -n 16 -e '4/4 "%08X" 1 "\n"' /dev/urandom | sed 's/\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)/\1\2\3\4-\5\6-\7\8-\9\10-\11\12\13\14\15\16/' | tr '[:upper:]' '[:lower:]'
-    fi
-}
-
 clear
 
 echo -e "${GREEN}========================================${NC}"
@@ -349,3 +339,4 @@ echo -e "${GREEN}部署完成！感谢使用！${NC}"
 为什么提示
 /dev/fd/63: line 7: syntax error near unexpected token `newline'
 /dev/fd/63: line 7: `<!DOCTYPE html>'
+
